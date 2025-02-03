@@ -1,0 +1,324 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 10px;
+  }
+  
+  /* Fixed Header */
+/* Compact Header Styling */
+header {
+    background-color: #007acc;
+    color: white;
+    padding: 10px 15px; /* Reduced padding */
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  header h1 {
+    font-size: 20px; /* Smaller font size */
+    margin-bottom: 5px; /* Reduced margin */
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Main Navigation Links */
+  .main-nav {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Reduced gap */
+  }
+  
+  .main-nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px; /* Smaller font size for links */
+  }
+  
+  .main-nav a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  /* Main Content Section */
+  main {
+    margin-top: 100px; /* Offset for fixed header */
+    margin-bottom: 60px; /* Offset for fixed footer */
+    padding: 20px;
+    flex: 1;
+    overflow-y: auto;
+  }
+  
+  
+  ul li a {
+    color: #007acc;
+    text-decoration: none;
+  }
+  
+  ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Fixed Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  /* Home Page Styling */
+.home-page {
+    padding: 20px;
+    margin-top: 80px; /* Offset for the fixed header */
+    margin-bottom: 60px; /* Offset for the fixed footer */
+    text-align: center;
+  }
+  
+  .welcome {
+    margin-bottom: 30px;
+  }
+  
+  .welcome h2 {
+    font-size: 24px;
+    color: #007acc;
+  }
+  
+  .welcome p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Topics Section */
+  .topics {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card h3 {
+    color: #007acc;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .card a {
+    text-decoration: none;
+    color: white;
+    background-color: #4CAF50;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .card a:hover {
+    background-color: #45a049;
+  }
+  
+  /* Card Hover Effect */
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+
+  /* Buttons Section */
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .buttons .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* YouTube Button */
+  .youtube-btn {
+    background-color: #FF0000;
+    color: #fff;
+  }
+  
+  .youtube-btn:hover {
+    background-color: #cc0000;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Docs Button */
+  .doc-btn {
+    background-color: #4CAF50;
+    color: #fff;
+  }
+  
+  .doc-btn:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Video Section */
+.video-tutorial {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .video-tutorial h2 {
+    color: #007acc;
+    margin-bottom: 10px;
+  }
+  
+  .video-container {
+    position: relative;
+    padding-bottom: 33.25%; /* Aspect ratio for 16:9 */
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 8px;
+  }
+  
+  .menu-toggle {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .menu-toggle i {
+    font-size: 24px;
+    color: white;
+  }
+  
+  .topic-content img{
+    width: 20%;
+  }
+
+  section .topic-content-img{
+    width: 50%;
+    height: 60%;
+  }
+
+  footer a{
+    color: #086bad;
+    text-decoration: none;
+  }
+  /* Responsive Design for Buttons */
+  @media (max-width: 600px) {
+    header h1{
+        text-align: left;
+    }
+    .buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .buttons .btn {
+      width: 80%;
+      text-align: center;
+    }
+
+    .video-container{
+        position: relative;
+        padding-bottom: 66.25%; /* Aspect ratio for 16:9 */
+        height: 0;
+        overflow: hidden;
+    }
+
+    .main-nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px; /* Below the header */
+        left: 0;
+        background-color: #007acc;
+        padding: 20px 0;
+      }
+    
+      .main-nav.active {
+        display: flex;
+      }
+    
+      .main-nav li {
+        text-align: center;
+        margin: 10px 0;
+      }
+    
+      .menu-toggle {
+        display: flex;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+      }
+  }
+  
+  
